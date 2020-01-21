@@ -54,6 +54,21 @@ return [
             'engine' => null,
         ],
 
+        'vkusvill' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', 'vkusvill.testin.ru'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'local'),
+            'username' => env('DB_USERNAME', 'local'),
+            'password' => env('DB_PASSWORD', 'local'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),

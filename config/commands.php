@@ -41,6 +41,29 @@ return [
 
     'add' => [
         // ..
+        Xethron\MigrationsGenerator\MigrateGenerateCommand::class,
+
+        // Spatie\Backup\Commands\CleanupCommand::class,
+        Spatie\Backup\Commands\BackupCommand::class,
+        Spatie\Backup\Commands\ListCommand::class,
+        Spatie\Backup\Commands\MonitorCommand::class,
+
+        // Way\Generators\Commands\GeneratorCommand::class,
+        Way\Generators\Commands\ControllerGeneratorCommand::class,
+        Way\Generators\Commands\MigrationGeneratorCommand::class,
+        Way\Generators\Commands\ModelGeneratorCommand::class,
+        Way\Generators\Commands\PivotGeneratorCommand::class,
+        Way\Generators\Commands\PublishTemplatesCommand::class,
+        Way\Generators\Commands\ResourceGeneratorCommand::class,
+        Way\Generators\Commands\ScaffoldGeneratorCommand::class,
+        Way\Generators\Commands\SeederGeneratorCommand::class,
+        Way\Generators\Commands\ViewGeneratorCommand::class,
+
+        NunoMaduro\LaravelConsoleSummary\SummaryCommand::class,
+        Symfony\Component\Console\Command\HelpCommand::class,
+        Illuminate\Console\Scheduling\ScheduleRunCommand::class,
+        Illuminate\Console\Scheduling\ScheduleFinishCommand::class,
+        Illuminate\Foundation\Console\VendorPublishCommand::class,
     ],
 
     /*
@@ -55,12 +78,11 @@ return [
     */
 
     'hidden' => [
-        NunoMaduro\LaravelConsoleSummary\SummaryCommand::class,
-        Symfony\Component\Console\Command\HelpCommand::class,
-        Illuminate\Console\Scheduling\ScheduleRunCommand::class,
-        Illuminate\Console\Scheduling\ScheduleFinishCommand::class,
-        Illuminate\Foundation\Console\VendorPublishCommand::class,
-        Xethron\MigrationsGenerator\MigrateGenerateCommand::class,
+        // NunoMaduro\LaravelConsoleSummary\SummaryCommand::class,
+        // Symfony\Component\Console\Command\HelpCommand::class,
+        // Illuminate\Console\Scheduling\ScheduleRunCommand::class,
+        // Illuminate\Console\Scheduling\ScheduleFinishCommand::class,
+        // Illuminate\Foundation\Console\VendorPublishCommand::class,
     ],
 
     /*

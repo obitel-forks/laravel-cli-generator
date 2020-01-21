@@ -25,8 +25,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //$this->app->environment() !== 'production'
     if (1) {
-    //     $this->app->register(\Way\Generators\GeneratorsServiceProvider::class);
-        // $this->app->register(\Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class);
+        // $this->app->register(\Way\Generators\GeneratorsServiceProvider::class);
+        $this->app->register(\Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class);
+        // $this->app->register(\Spatie\Backup\BackupServiceProvider::class);
     }
     }
 }
